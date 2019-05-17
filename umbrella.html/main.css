@@ -1,0 +1,108 @@
+body {
+  background: purple;
+  font-family: cursive;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 700;
+  font-size: 20px;
+  background-image: url("none");
+  background: linear-gradient(to top, #f0c27b, #4b1248);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: none;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#snow {
+  background-image: url('spae.png'), url('space1.png'), url('space2.png');
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-animation: snow 1000s linear infinite;
+  -moz-animation: snow 1000s linear infinite;
+  -ms-animation: snow 1000s linear infinite;
+  animation: snow 1000s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: -1;
+
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+
+  100% {
+    background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;
+  }
+}
+
+@-moz-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+
+  100% {
+    background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;
+  }
+}
+
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+
+  100% {
+    background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;
+  }
+}
+
+@-ms-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+
+  100% {
+    background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;
+  }
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 110px;
+  background: blue;
+  padding: 10px;
+  margin: 10px border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+}
+
+a:hover {
+  background: black;
+  color: pink;
+  border-radius: 50%;
+}
+
+a:active {
+  color: pink;
+  background: pink;
+  width: 600px;
+  height: 300px
+}
+}
